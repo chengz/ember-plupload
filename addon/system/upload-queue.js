@@ -81,10 +81,10 @@ export default Ember.ArrayProxy.extend({
     let ruid = $input.attr('id');
     let I = mOxie.Runtime.getInfo(ruid);
 
-    // Polyfill mobile support
-    if (!I.can('summon_file_dialog')) {
-      $input.attr('capture', 'camera');
-    }
+//     // Polyfill mobile support
+//     if (!I.can('summon_file_dialog')) {
+//       $input.attr('capture', 'camera');
+//     }
   },
 
   /**
